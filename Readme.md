@@ -1,6 +1,7 @@
 ﻿# Личный проект «Глейси»
 
 * Студент: [Дарья Брыль](https://up.htmlacademy.ru/htmlcss/16/user/180349).
+* Наставник: [Дарья Сабурова] (https://htmlacademy.ru/profile/id117612).
 
 ---
 
