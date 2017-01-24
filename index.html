@@ -6,32 +6,61 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <nav class="main-navigation">
-          <ul>
-            <li><a href="#">логотип</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <ul>
-            <li><a class="search" href="#">Поиск</a></li>
-            <li><a class="login" href="#">Вход</a></li>
-            <li><a class="basket" href="#">Корзина</a></li>
-          </ul>
-          <p>С 10 до 20, ежедневно
+      <nav class="main-navigation">
+        <ul>
+          <li><a><img src="#" width="" height="" alt="logo"></a></li>
+          <li><a href="#">Каталог</a></li>
+          <form class="catalog" action="#" method="post">
+            <select>
+              <option value="novelty">Новинки</option>
+              <option value="creamy">Сливочное</option>
+              <option value="sherbets">Щербеты</option>
+              <option value="fruit-ice">Фруктовый лед</option>
+              <option value="melorin">Мелорин</option>
+            </select>
+          </form>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
+      </nav>
+      <form class="user-block" action="#" method="post">
+        <ul>
+          <li><a class="search" href="#">Поиск</a></li>
+          <input type="text" name="search" placeholder="Что ищем?">
+          <li><a class="login" href="#">Вход</a></li>
+          <input type="text" name="mail" placeholder="Электронная почта">
+          <input type="text" name="password" placeholder="Пароль">
+          <a class="button">Войти</a>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+          <li><a class="basket" href="#">Пусто</a></li>
+        </ul>
+        <p>С 10 до 20, ежедневно
             8 812 450-25-25</p>
-        </div>
-      </div>
+      </form>
     </header>
-    <main class="container">
-      <div class="ice-cream">
-        <img src="#" width="" height="" alt="Мороженое крем-брюле">
-        <img src="#" width="" height="" alt="Пломбир с малиновым джемом">
-        <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-        <a class="button">Давайте оба!</a>
+    <main>
+      <div class="slider">
+        <div class="ice-cream-1">
+          <img src="#" width="" height="" alt="Мороженое-1">
+          <p>Крем-брюле и пломбир с малиновым джемом</p>
+          <a class="button">Давайте оба!</a>
+        </div>
+        <div class="ice-cream-2">
+          <img src="#" width="" height="" alt="Мороженое-2">
+          <p>Шоколадный пломбир и лимонный сорбет</p>
+          <a class="button">Давайте оба!</a>
+        </div>
+        <div class="ice-cream-3">
+          <img src="#" width="" height="" alt="Мороженое-3">
+          <p>Пломбир с помадкой и лимонный щербет</p>
+          <a class="button">Давайте оба!</a>
+        </div>
+        <nav class="slider">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </nav>
       </div>
       <div class="raspberries">
         <h2>Малинка даром!</h2>
@@ -73,7 +102,7 @@
       </div>
       <article>
         <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого
-            соственного производства на развес</h3>
+            собственного производства на развес</h3>
         <div class="description">
           <img src="#" width="" height="" alt="Мороженко">
           <p>Все наше мороженое изготавливается на собственном производстве,
@@ -111,40 +140,46 @@
         </form>
       </section>
       <section class="map">
-        <div class="adress">
-          <p>Адрес главного офиса <br>
-          и офлайн магазина: <br>
-          <strong>ул.Большая Конюшенная <br>
+        <img src="#" width="" height="" alt="map">
+        <div class="address">
+          <p>Адрес главного офиса
+          и офлайн магазина:</p>
+          <p><strong>ул.Большая Конюшенная
           19/В, Санкт-Петербург</strong></p>
-          <p>Для заказов по телефону:<br>
-          <strong>8 812 450-25-25</strong><dr>
+          <p>Для заказов по телефону:
+          <strong>8 812 450-25-25</strong>
           (с 10 до 20 ежедневно)</p>
           <a href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">В контакте</a>
-        </section>
-        <section class="footer-about-us">
-          <img src="#" width="" height="" alt="heart">
-          <a href="#">Для поставщиков</a>
-          <a href="#">О производстве</a>
-          <a href="#">Наши документы</a>
-          <a href="#">Экологические стандарты</a>
-        </section>
-        <section class="footer-copyright">
-          <img src="#" width="" height="" alt="Логотип академии">
-          <p>Сделано в</p>
-          <a href="#">HTML Academy</a>
-          <p>2017</p>
-        </section>
-      </div>
+      <section class="footer-social">
+        <ul>
+          <li><a class="social-btn social-btn-tw" href="#">Твиттер</a></li>
+          <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+          <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+          <li><a class="social-btn social-btn-vk" href="#">В контакте</a></li>
+        </ul>
+      </section>
+      <section class="footer-about-us">
+        <img src="#" width="" height="" alt="heart">
+        <a href="#">Для поставщиков</a>
+        <a href="#">О производстве</a>
+        <a href="#">Наши документы</a>
+        <a href="#">Экологические стандарты</a>
+      </section>
+      <section class="footer-copyright">
+        <img src="#" width="" height="" alt="Логотип академии">
+        <p>Сделано в<a href="#">HTML Academy</a>2017</p>
+      </section>
     </footer>
+    <form class="modal" action="#" method="post">
+      <p>Мы обязательно Вам ответим!</p>
+      <input type="text" name="name" placeholder="Как вас зовут?">
+      <input type="text" name="mail" placeholder="Ваша почта для ответа?">
+      <textarea name="comment" rows="10">Напишите что-нибудь...</textarea>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
   </body>
 </html>
