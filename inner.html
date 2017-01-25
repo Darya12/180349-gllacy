@@ -10,7 +10,6 @@
         <ul>
           <li><a href="#"><img src="#" width="" height="" alt="logo"></a></li>
           <li><a href="#">Каталог</a></li>
-          <form class="catalog" action="#" method="post">
             <select>
               <option value="novelty">Новинки</option>
               <option value="creamy">Сливочное</option>
@@ -18,21 +17,26 @@
               <option value="fruit-ice">Фруктовый лед</option>
               <option value="melorin">Мелорин</option>
             </select>
-          </form>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
       </nav>
-      <form class="user-block" action="#" method="post">
+      <div class="user-block">
         <ul>
-          <li><a class="search" href="#">Поиск</a></li>
-          <input type="text" name="search" placeholder="Что ищем?">
-          <li><a class="login" href="#">Вход</a></li>
-          <input type="text" name="mail" placeholder="Электронная почта">
-          <input type="text" name="password" placeholder="Пароль">
-          <a class="button">Войти</a>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
+          <li><a class="search" href="#">Поиск</a>
+          <form action="#" method="post">
+            <input type="text" name="search" placeholder="Что ищем?">
+          </form>
+          </li>
+          <li><a class="login" href="#">Вход</a>
+          <form action="#" method="post">
+            <input type="text" name="mail" placeholder="Электронная почта">
+            <input type="text" name="password" placeholder="Пароль">
+            <a class="button">Войти</a>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </form>
+          </li>
           <li><a class="basket" href="#">2 товара</a></li>
           <div class="purchase">
             <table>

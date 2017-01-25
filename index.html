@@ -10,7 +10,6 @@
         <ul>
           <li><a><img src="#" width="" height="" alt="logo"></a></li>
           <li><a href="#">Каталог</a></li>
-          <form class="catalog" action="#" method="post">
             <select>
               <option value="novelty">Новинки</option>
               <option value="creamy">Сливочное</option>
@@ -18,26 +17,29 @@
               <option value="fruit-ice">Фруктовый лед</option>
               <option value="melorin">Мелорин</option>
             </select>
-          </form>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
       </nav>
-      <form class="user-block" action="#" method="post">
+      <div class="user-block">
         <ul>
           <li><a class="search" href="#">Поиск</a></li>
-          <input type="text" name="search" placeholder="Что ищем?">
+          <form action="#" method="post">
+            <input type="text" name="search" placeholder="Что ищем?">
+          </form>
           <li><a class="login" href="#">Вход</a></li>
-          <input type="text" name="mail" placeholder="Электронная почта">
-          <input type="text" name="password" placeholder="Пароль">
-          <a class="button">Войти</a>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
+          <form action="#" method="post">
+            <input type="text" name="mail" placeholder="Электронная почта">
+            <input type="text" name="password" placeholder="Пароль">
+            <a class="button">Войти</a>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </form>
           <li><a class="basket" href="#">Пусто</a></li>
         </ul>
         <p>С 10 до 20, ежедневно
             8 812 450-25-25</p>
-      </form>
+      </div>
     </header>
     <main>
       <div class="slider">
@@ -170,7 +172,7 @@
         <a href="#">Экологические стандарты</a>
       </section>
       <section class="footer-copyright">
-        <img src="#" width="" height="" alt="Логотип академии">
+        <a href="#"><img src="#" width="" height="" alt="Логотип академии"></a>
         <p>Сделано в<a href="#">HTML Academy</a>2017</p>
       </section>
     </footer>
