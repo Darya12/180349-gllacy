@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <ul>
-          <li><a href="#"><img src="#" width="" height="" alt="logo"></a></li>
+          <li><a href="#"><img src="img/Logo.png" width="154px" height="64px" alt="Глейси"></a></li>
           <li><a href="#">Каталог</a>
-            <select>
-              <option value="novelty">Новинки</option>
-              <option value="creamy">Сливочное</option>
-              <option value="sherbets">Щербеты</option>
-              <option value="fruit-ice">Фруктовый лед</option>
-              <option value="melorin">Мелорин</option>
-            </select>
-            </li>
+            <ul>
+              <li><a>Новинки</a></li>
+              <li><a>Сливочное</a></li>
+              <li><a>Щербеты</a></li>
+              <li><a>Фруктовый лед</a></li>
+              <li><a>Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
@@ -25,44 +26,44 @@
       <div class="user-block">
         <ul>
           <li><a class="search" href="#">Поиск</a>
-          <form action="#" method="post">
-            <input type="text" name="search" placeholder="Что ищем?">
-          </form>
+            <form action="#" method="post">
+              <input type="text" name="search" placeholder="Что ищем?">
+            </form>
           </li>
           <li><a class="login" href="#">Вход</a>
-          <form action="#" method="post">
-            <input type="text" name="mail" placeholder="Электронная почта">
-            <input type="text" name="password" placeholder="Пароль">
-            <a class="button">Войти</a>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </form>
+            <form action="#" method="post">
+              <input type="text" name="mail" placeholder="Электронная почта">
+              <input type="text" name="password" placeholder="Пароль">
+              <a class="button">Войти</a>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
           </li>
-          <li><a class="basket" href="#">2 товара</a></li>
-          <div class="purchase">
-            <table>
-              <tr>
-                <td><img src="#" width="" height="" alt="Заказ-1"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг x 200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><img src="#" width="" height="" alt="Заказ-2"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг x 300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td colspan="4">Итого: 750 руб.</td>
-              </tr>
-            </table>
-            <a class="button">Отправить</a>
-          </div>
+          <li><a class="basket" href="#">2 товара</a>
+            <div class="purchase">
+              <table>
+                <tr>
+                  <td><img src="#" width="" height="" alt="Заказ-1"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг x 200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><img src="#" width="" height="" alt="Заказ-2"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг x 300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr>
+                  <td colspan="4">Итого: 750 руб.</td>
+                </tr>
+              </table>
+              <a class="button">Отправить</a>
+            </div>
+          </li>
         </ul>
         <p>С 10 до 20, ежедневно
             8 812 450-25-25</p>
-      </form>
     </header>
     <main>
       <nav class="breadcrumbs">
@@ -115,75 +116,88 @@
       </form>
       <article class="catalog">
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-1.png" width="267px" height="267px" alt="мороженое">
           <p class="price">310 P/кг</p>
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-2.png" width="267px" height="267px" alt="мороженое">
           <p class="price">380 P/кг</p>
           <p>Сливочно-кофейное с кусочками шоколада</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-3.png" width="267px" height="267px" alt="мороженое">
           <p class="price">355 P/кг</p>
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <a class="button">Быстрый просмотр</a>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-4.png" width="267px" height="267px" alt="мороженое">
           <p class="price">415 P/кг</p>
           <p>Сливочное крем-брюле с карамельной подливкой</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-5.png" width="267px" height="267px" alt="мороженое">
           <p class="price">325 P/кг</p>
           <p>Сливочное с брусничным джемом</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-6.png" width="267px" height="267px" alt="мороженое">
           <p class="price">410 P/кг</p>
           <p>Сливочно-черничное с цельными ягодами черники</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-7.png" width="267px" height="267px" alt="мороженое">
           <p class="price">375 P/кг</p>
           <p>Сливочно-лимонное с карамельной присыпкой</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-8.png" width="267px" height="267px" alt="мороженое">
           <p class="price">320 P/кг</p>
           <p>Сливочное с шоколадной стружкой</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-9.png" width="267px" height="267px" alt="мороженое">
           <p class="price">440 P/кг</p>
           <p>Сливочно-ванильное с кусочками шоколада</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-10.png" width="267px" height="267px" alt="мороженое">
           <p class="price">435 P/кг</p>
           <p>Сливочное с ментоловым сиропом</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-11.png" width="267px" height="267px" alt="мороженое">
           <p class="price">355 P/кг</p>
           <p>Сливочное с кусочками черного шоколада</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item">
-          <img src="#" width="" height="" alt="мороженое">
+          <img src="img/hit-12.png" width="267px" height="267px" alt="мороженое">
           <p class="price">420 P/кг</p>
           <p>Сливочное с мятным сиропом</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </div>
       </article>
       <div class="paginator">
-        <a class="btn-paginator-prev"href="#"></a>
-        <a class="btn-paginator-1"href="#">1</a>
-        <a class="btn-paginator-2"href="#">2</a>
-        <a class="btn-paginator-3"href="#">3</a>
-        <a class="btn-paginator-4"href="#">4</a>
-        <a class="btn-paginator-5"href="#">5</a>
-        <a class="btn-paginator-next"href="#"></a>
+        <ul>
+          <li><a class="btn-paginator-prev"href="#"></a></li>
+          <li><a class="btn-paginator-1"href="#">1</a></li>
+          <li><a class="btn-paginator-2"href="#">2</a></li>
+          <li><a class="btn-paginator-3"href="#">3</a></li>
+          <li><a class="btn-paginator-4"href="#">4</a></li>
+          <li><a class="btn-paginator-5"href="#">5</a></li>
+          <li><a class="btn-paginator-next"href="#"></a></li>
+        </ul>
       </div>
     </main>
     <footer class="main-footer">

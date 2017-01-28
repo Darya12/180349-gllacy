@@ -1,0 +1,18 @@
+body{
+  background-color: #849d8f;
+}
+.raspberries{
+  background-image: url("../img/raspberry.jpg");
+  background-repeat: no-repeat;
+  background-color: #d34869;
+}
+.chocolate{
+  background-image: url("../img/chocolate.jpg");
+  background-repeat: no-repeat;
+  background-color: #40271d;
+}
+.blog{
+  background-image: url("../img/blog.jpg");
+  background-repeat: no-repeat;
+  background-color: #f4f7f5;
+}
