@@ -107,9 +107,9 @@
         </ul>
       </nav>
       <h1>Сливочное мороженое</h1>
-      <form class="filters" action="#" method="get">
+      <form class="filters clearfix" action="#" method="get">
         <div class="sorting">
-          <p class="filters sorting">Сортировка:</p>
+          <p class="filters-sorting">Сортировка:</p>
           <select name="sorting">
             <option value="popularity">По популярности</option>
             <option value="cheap">Сначала недорогие</option>
@@ -118,11 +118,11 @@
           </select>
         </div>
         <div class="price">
-          <p class="filters price">Цена: 100 руб. - 500 руб.</p>
+          <p class="filters-price">Цена: 100 руб. - 500 руб.</p>
           <input type="range">
         </div>
         <div class="fatness">
-          <p class="filters fatness">Жирность</p>
+          <p class="filters-fatness">Жирность</p>
           <input type="radio" id="0%">
           <label for="0%">0%</label>
           <input type="radio" id="10%"checked>
@@ -221,10 +221,10 @@
           <a class="button button-catalog" href="#">Быстрый просмотр</a>
         </div>
       </section>
-      <div class="paginator">
+      <div class="paginator clearfix">
         <ul class="nav-paginator">
           <li class="paginator-item">
-            <a class="paginator-btn"href="#"></a>
+            <a class="paginator-btn"href="#">prev</a>
           </li>
           <li class="paginator-item">
             <a class="paginator-btn"href="#">1</a>
@@ -242,12 +242,12 @@
             <a class="paginator-btn"href="#">5</a>
           </li>
           <li class="paginator-item">
-            <a class="paginator-btn"href="#"></a>
+            <a class="paginator-btn"href="#">next</a>
           </li>
         </ul>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer clearfix">
       <section class="footer-social">
         <ul class="social-btn">
           <li class="social-btn-item">
@@ -264,7 +264,7 @@
           </li>
         </ul>
       </section>
-      <section class="footer about-us">
+      <section class="footer-about-us">
         <ul class="footer information">
           <li class="footer information-item">
             <img src="#" width="" height="" alt="heart">

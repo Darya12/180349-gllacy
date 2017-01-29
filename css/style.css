@@ -11,6 +11,7 @@ h1{
   line-height: 41px;
   color: #ffffff;
   font-weight: bold;
+  margin-left: 27px;
 }
 .clearfix::after{
   content: "";
@@ -21,7 +22,6 @@ header{
   width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
-  border: 1px solid red;
 }
 .main-navigation{
   float: left;
@@ -31,20 +31,20 @@ header{
   float: right;
   width: 267px;
 }
-footer{
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0 27px;
-}
 main{
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid green;
+  margin-bottom: 40px;
 }
-.action{
+.slider{
   width: 1146px;
-  margin: 0 auto;
-  padding: 0 27px;
+  margin: 0 27px;
+}
+.actions{
+  width: 1146px;
+  margin: 0 27px;
+  margin-bottom: 40px;
+  background-color: green;
 }
 .raspberries{
   float: left;
@@ -68,21 +68,88 @@ main{
   width: 267px;
   padding-right: 26px;
 }
-article{
-  width: 1146px;
+.production{
+  width: 1126px;
   margin: 0 27px;
+  margin-bottom: 40px;
+  padding-left: 20px;
   background-image: url("../img/wafer.jpg");
   background-repeat: no-repeat;
   background-color: #ebddbe;
-  border: 1px solid green;
 }
-.description-item{
+.production-item{
   float: left;
   width: 540px;
-  padding-right: 25px;
+  padding-right: 22px;
+}
+.news{
+  width: 1146px;
+  margin: 0 27px;
+}
+.blog{
+  float: left;
+  width: 560px;
+  background-image: url("../img/blog.jpg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+.delivery{
+  float: right;
+  width: 560px;
+  background-image: url("../img/mail.jpg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+.map{
+  width: 1200px;
+  margin: 0 auto;
+}
+.breadcrumbs{
+  margin-left: 27px;
+}
+.filters{
+  width: 1146px;
+  margin: 0 27px;
+}
+.sorting{
+  float: left;
+  width: 195px;
+  padding-right: 15px;
+}
+.price{
+  float: left;
+  width: 220px;
+  padding-right: 15px;
+}
+.fatness{
+  float: left;
+  width: 418px;
+  padding-right: 280px;
+}
+.fillers{
+  float: left;
+  width: 863px;
+  padding-right: 280px;
+}
+.nav-paginator{
+  float: right;
+  padding-right: 27px;
 }
 footer{
   width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
+}
+.footer-social{
+  float: left;
+  width: 350px;
+  padding-right: 50px;
+}
+.footer-about-us{
+  float: left;
+  width: 340px;
+}
+.footer-copyright{
+  float: right;
+  width: 190px;
 }
