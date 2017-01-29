@@ -12,24 +12,77 @@ h1{
   color: #ffffff;
   font-weight: bold;
 }
-.name{
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  font-weight: medium;
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+header{
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+  border: 1px solid red;
+}
+.main-navigation{
+  float: left;
+  width: 573px;
+}
+.user-block{
+  float: right;
+  width: 267px;
+}
+footer{
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+main{
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+.features{
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
 }
 .raspberries{
+  float: left;
+  width: 560px;
   background-image: url("../img/raspberry.jpg");
   background-repeat: no-repeat;
   background-color: #d34869;
 }
 .chocolate{
+  float: right;
+  width: 560px;
   background-image: url("../img/chocolate.jpg");
   background-repeat: no-repeat;
   background-color: #40271d;
 }
-.blog{
-  background-image: url("../img/blog.jpg");
+.catalog{
+  padding-left: 27px;
+}
+.catalog-item{
+  float: left;
+  width: 267px;
+  padding-right: 26px;
+}
+article{
+  width: 1146px;
+  margin: 0 27px;
+  background-image: url("../img/wafer.jpg");
   background-repeat: no-repeat;
-  background-color: #f4f7f5;
+  background-color: #ebddbe;
+  border: 1px solid green;
+}
+.description-item{
+  float: left;
+  width: 540px;
+  padding-right: 25px;
+}
+footer{
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
 }
