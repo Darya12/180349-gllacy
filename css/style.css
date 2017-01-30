@@ -38,13 +38,12 @@ main{
 }
 .slider{
   width: 1146px;
-  margin: 0 27px;
+  margin: 0 auto;
 }
 .actions{
   width: 1146px;
   margin: 0 27px;
   margin-bottom: 40px;
-  background-color: green;
 }
 .raspberries{
   float: left;
@@ -61,12 +60,16 @@ main{
   background-color: #40271d;
 }
 .catalog{
-  padding-left: 27px;
+  width: 1172;
+  margin: 0 14px;
 }
 .catalog-item{
   float: left;
   width: 267px;
-  padding-right: 26px;
+  height: 363px;
+  padding-top: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 .production{
   width: 1126px;
@@ -101,8 +104,12 @@ main{
   background-color: #ffffff;
 }
 .map{
-  width: 1200px;
   margin: 0 auto;
+}
+.address{
+  width: 303px;
+  height: 305px;
+  background-color: #fefefe;
 }
 .breadcrumbs{
   margin-left: 27px;
