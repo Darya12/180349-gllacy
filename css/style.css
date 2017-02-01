@@ -66,7 +66,7 @@ main{
 .catalog-item{
   float: left;
   width: 267px;
-  height: 363px;
+  height: 450px;
   padding-top: 6px;
   padding-left: 13px;
   padding-right: 13px;
@@ -104,7 +104,7 @@ main{
   background-color: #ffffff;
 }
 .map{
-  margin: 0 auto;
+  
 }
 .address{
   width: 303px;
