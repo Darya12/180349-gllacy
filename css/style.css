@@ -104,11 +104,19 @@ main{
   background-color: #ffffff;
 }
 .map{
-  
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 1px solid green;
 }
 .address{
   width: 303px;
-  height: 305px;
+  float: right;
   background-color: #fefefe;
 }
 .breadcrumbs{
