@@ -1,5 +1,4 @@
 body{
-  min-width: 1200px;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
@@ -53,10 +52,6 @@ body > input[type="radio"] {
 }
 .button{
   display: inline-block;
-  padding: 10px 42px;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 44px;
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
@@ -67,6 +62,12 @@ body > input[type="radio"] {
   background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+.button-slide{
+  padding: 10px 42px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
 }
 .button:hover {
   background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -161,45 +162,54 @@ header{
   padding: 0;
   list-style: none;
   font-size: 0;
+  margin-top: 15px;
+  margin-bottom: 6px;
 }
 .menu-item a{
   color: #ffffff;
   display: block;
+  text-decoration: none;
   border-radius: 14px;
   padding: 7px 14px;
-  margin-top: 15px;
-  margin-bottom: 6px;
-  text-decoration: underline;
 }
 .menu-item .visit{
   background-color: #d07058;
-  text-decoration: none;
-}
-.menu-item{
-  position: relative;
 }
 .menu-item {
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
   vertical-align: top;
+  position: relative;
+}
+.menu-item a::after{
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.2;
+  width: 100%;
 }
 .menu-item a:hover{
   color: #333333;
   background-color: #f7f6f3;
-  text-decoration: none;
+}
+.menu-item a:hover+.submenu{
+  display: block;
 }
 .menu-item a:active{
   color: #333333;
   background-color: #ededed;
-  text-decoration: none;
 }
 .submenu{
   position: absolute;
-  top: 53px;
-  left: 148px;
+  top: 23px;
+  left: -6px;
   z-index: 10;
   display: none;
+}
+.submenu:hover{
+  display: block;
 }
 .submenu-item{
   font-size: 14px;
@@ -209,7 +219,6 @@ header{
   border-radius: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 0px;
   color: #323232;
   background-color: #f7f6f3;
   text-decoration: none;
@@ -240,26 +249,28 @@ header{
   vertical-align: top;
   font-size: 14px;
   line-height: 16px;
+  margin-top: 23px;
+  margin-left: 11px;
 }
 .user-block-item a{
   display: block;
-  margin-top: 23px;
-  margin-right: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
   font-weight: 500;
   color: #ffffff;
   text-decoration: none;
-  background-color: #9fb4a9;
   border-radius: 16px;
 }
 .search{
   width: 32px;
   height: 16px;
+  background-color: #ffffff;
+  opacity: 0.2;
   position: relative;
 }
 .search:hover{
-  background-color: #f8f7f4;
+  background-color: #ffffff;
+  opacity: 1;
 }
 .search::before{
   content: "";
@@ -271,6 +282,7 @@ header{
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -391px -172px;
+  opacity: 1;
 }
 .search:hover::before{
   background-image: url("../img/sprite.png");
@@ -280,10 +292,13 @@ header{
 .login{
   padding-left: 44px;
   padding-right: 16px;
+  background-color: #ffffff;
+  opacity: 0.2;
   position: relative;
 }
 .login:hover{
-  background-color: #f8f7f4;
+  background-color: #ffffff;
+  opacity: 1;
   color: #323232;
 }
 .login::before{
@@ -303,13 +318,11 @@ header{
   background-position: -271px -10px;
 }
 .basket{
-  padding-left: 44px;
-  padding-right: 34px;
+  padding-left: 42px;
+  padding-right: 37px;
+  background-color: #ffffff;
+  opacity: 0.2;
   position: relative;
-}
-.basket:hover{
-  background-color: #f8f7f4;
-  color: #323232;
 }
 .basket::before{
   content: "";
@@ -326,13 +339,15 @@ header{
   float: right;
   width: 170px;
   font-size: 14px;
-  font-weight: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: right;
 }
-/*.bold{
+.tel{
   font-size: 22px;
   line-height:24px;
   font-weight: bold;
-}*/
+}
 main{
   width: 1200px;
   margin: 0 auto;
@@ -386,6 +401,11 @@ main{
   padding-left: 13px;
   padding-right: 13px;
   position: relative;
+}
+.catalog-item-photo{
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
 }
 .catalog-item-hit{
   position: absolute;
@@ -446,7 +466,39 @@ main{
   background-repeat: no-repeat;
   background-position: -231px -88px;
 }
-
+.production-item:nth-child(4)::before{
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 16px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -174px -157px;
+}
+.production-item:nth-child(3)::before{
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 16px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -203px -10px;
+}
+.production-item:last-child::before{
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 16px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -428px -172px;;
+}
 h3{
   font-size: 24px;
   line-height: 30px;
@@ -457,21 +509,60 @@ h3{
 .news{
   width: 1146px;
   margin: 0 27px;
-  background-color: blue;
 }
 .blog{
   float: left;
   width: 560px;
   background-image: url("../img/blog.jpg");
+  border-radius: 15px;
   background-repeat: no-repeat;
   background-color: #ffffff;
+}
+.new{
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-bottom: 7px;
+}
+.topic{
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+  margin-left: 20px;
+  margin-right: 250px;
+  margin-bottom: 76px;
 }
 .delivery{
   float: right;
   width: 560px;
-  background-image: url("../img/mail.jpg");
-  background-repeat: no-repeat;
   background-color: #ffffff;
+  border-radius: 15px;
+}
+.mail{
+  display: block;
+  color: #5a5a5a;
+  margin-top: 35px;
+  padding-left: 27px;
+  padding-right: 12px;
+}
+.button-mail{
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 10px 17px;
+  margin-left: 7px;
+  margin-bottom: 40px;
+}
+.mail input[type="text"]{
+  width: 353px;
+  height: 40px;
+  font-size: 16px;
+  line-height:24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+  padding-left: 15px;
 }
 .map{
   min-width: 1200px;
