@@ -53,7 +53,7 @@ body > input[type="radio"] {
 .button{
   display: inline-block;
   vertical-align: top;
-  color: #ffffff;
+  color: #fefefe;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba (160, 32, 11, 0.76);
   background: #f26843;
@@ -320,8 +320,8 @@ header{
 .basket{
   padding-left: 42px;
   padding-right: 37px;
-  background-color: #ffffff;
-  opacity: 0.2;
+  /*background-color: #ffffff;
+  opacity: 0.2;*/
   position: relative;
 }
 .basket::before{
@@ -335,6 +335,17 @@ header{
   background-repeat: no-repeat;
   background-position: -51px -10px;
 }
+.not-empty::before{
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 15px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
 .user-time{
   float: right;
   width: 170px;
@@ -347,6 +358,102 @@ header{
   font-size: 22px;
   line-height:24px;
   font-weight: bold;
+}
+.purchase{
+  width: 540px;
+  background-color: #f8f7f4;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+  position: absolute;
+  top: 70px;
+  right: 100px;
+  z-index: 20;
+  display: none;
+}
+table{
+  border-collapse: collapse;
+  margin: 10px 15px;
+}
+td{
+  padding-left: 2px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  vertical-align: top;
+}
+.close{
+  width: 23px;
+  position: relative;
+}
+.delete::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/sprite.png");
+  background-position: -172px -10px;
+}
+.icon{
+  width: 44px;
+  position: relative;
+}
+.photo-1::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/sprite.png");
+  background-position: -10px -157px;
+}
+.photo-2:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/sprite.png");
+  background-position: -63px -157px;
+}
+.ice{
+  width: 225px;
+  padding-right: 20px;
+}
+.ice-price{
+  width: 120px;
+}
+.price-total{
+  width: 70px;
+}
+.sum{
+  color: #999999;
+}
+.total{
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: right;
+  border-top: 1px solid grey;
+}
+.order{
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 340px;
+  text-align: right;
+}
+.button-purchase,
+.button-modal{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+.basket:hover+.purchase{
+  display: block;
 }
 main{
   width: 1200px;
@@ -426,7 +533,8 @@ main{
   text-align: center;
 }
 .catalog-item:hover{
-  background-color: #a7b8ad;
+  background: rgb(255, 255, 255);
+  background: rgba (255, 255, 255, 0.3);
 }
 .button-catalog{
   font-size: 18px;
@@ -768,4 +876,75 @@ footer{
 .footer-copyright{
   float: right;
   width: 190px;
+}
+.modal-content{
+  position: absolute;
+  top: 338px;
+  left: 50%;
+  width: 425px;
+  margin-left: -223px;
+  padding: 20px 24px;
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  display: none;
+}
+.modal-content-close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 17px;
+  height: 17px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+}
+.modal-content-close::before,
+.modal-content-close::after{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -3px;
+  width: 22px;
+  height: 3px;
+  background-color: #333333;
+  border-radius: 1px;
+}
+.modal-content-close::before{
+  transform: rotate(45deg);
+}
+.modal-content-close::after{
+  transform: rotate(-45deg);
+}
+.modal-contact{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.modal-form input[type="text"],
+.modal-form textarea{
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+.modal-form input[type="text"]{
+  width: 267px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 9px 14px;
+  border-radius: 3px;
+}
+.modal-form textarea{
+  width: 398px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 9px 14px;
+  border-radius: 3px;
+}
+.button-modal{
+  margin-left: 300px;
+  margin-bottom: 10px;
 }
