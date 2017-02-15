@@ -23,7 +23,7 @@
                 <a href="#">Каталог</a>
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="#">Новинки</a>
+                    <p class="submenu-title">Новинки</p>
                   </li>
                   <li class="submenu-item">
                     <a href="inner.html">Сливочное</a>
@@ -48,22 +48,18 @@
             </ul>
           </nav>
           <div class="user-block">
-            <ul class="user">
+            <ul class="user clearfix">
               <li class="user-block-item">
-                <a class="search" href="#"></a>
-                <div class="form-content search-content">
-                  <form class="form search-form" action="#" method="get">
-                    <label for="search"class="label-form">Что ищем?</label>
-                    <input type="text" id="search" name="search" placeholder="Что ищем?">
-                  </form>
-                </div>
+                <a class="basket" href="#">Пусто</a>
               </li>
               <li class="user-block-item">
                 <a class="login" href="#">Вход</a>
                 <div class="form-content login-content clearfix">
                   <form class="form login-form"action="#" method="post">
-                    <label class="label-form">Электронная почта<input type="text" name="mail" placeholder="Электронная почта"></label>
-                    <label class="label-form">Пароль<input type="text" name="password" placeholder="Пароль"></label>
+                    <input type="text" id="mail-1" name="mail" placeholder="Электронная почта">
+                    <label class="label-form" for="mail-1">Электронная почта</label>
+                    <input type="text" id="password" name="password" placeholder="Пароль">
+                    <label class="label-form" for="password">Пароль</label>
                     <input type="submit" class="button" value="Войти">
                     <div class="entrance">
                       <a href="#">Забыли пароль?</a>
@@ -73,7 +69,13 @@
                 </div>
               </li>
               <li class="user-block-item">
-                <a class="basket" href="#">Пусто</a>
+                <a class="search" href="#"></a>
+                <div class="form-content search-content">
+                  <form class="form search-form" action="#" method="get">
+                    <input type="text" id="search" name="search" placeholder="Что ищем?">
+                    <label for="search" class="label-form">Что ищем?</label>
+                  </form>
+                </div>
               </li>
             </ul>
             <p class="user-time">С 10 до 20, ежедневно<br><span class="phone">8 812 450-25-25</span></p>
@@ -148,31 +150,34 @@
             <p class="production-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             <p class="production-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </section>
-        <section class="news clearfix">
-          <div class="blog">
-            <p class="new">Новое в нашем блоге</p>
-            <a class="topic" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-          </div>
-          <div class="delivery">
-            <p class="mail">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="mail" action="#" method="get">
-              <input type="text" name="mail" placeholder="Электронная почта">
-              <input class="button button-mail" type="submit" value="Отправить">
-            </form>
+          <section class="news clearfix">
+            <div class="blog">
+              <p class="new">Новое в нашем блоге</p>
+              <a class="topic" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </div>
+            <div class="delivery">
+              <p class="mail">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="mail" action="#" method="get">
+                <input type="text" id="mail-2" name="mail" placeholder="Электронная почта">
+                <label class="label-form" for="mail-2">Электронная почта</label>
+                <input class="button button-mail" type="submit" value="Отправить">
+              </form>
+            </div>
+          </section>
+        </main>
+        <section class="map-block">
+          <img src="img/map.jpg" width="100%" height="100%" alt="map">
+          <div class="container clearfix">
+            <div class="address">
+              <p class="label">Адрес главного офиса и офлайн магазина:</p>
+              <p class="value"><strong>ул.Большая Конюшенная 19/В, Санкт-Петербург</strong></p>
+              <p class="order-phone">Для заказов по телефону:</p>
+              <p class="phone-2">8 812 450-25-25</p>
+              <p class="phone-time">(с 10 до 20 ежедневно)</p>
+              <a class="button button-address" href="#">Форма обратной связи</a>
+            </div>
           </div>
         </section>
-      </main>
-      <section class="map-block">
-        <img src="img/map.jpg" width="100%" height="100%" alt="map">
-        <div class="container clearfix">
-          <div class="address">
-            <p class="label">Адрес главного офиса и офлайн магазина:</p>
-            <p class="value"><strong>ул.Большая Конюшенная 19/В, Санкт-Петербург</strong></p>
-            <p class="label">Для заказов по телефону:<strong>8 812 450-25-25</strong>(с 10 до 20 ежедневно)</p>
-            <a class="button button-address" href="#">Форма обратной связи</a>
-          </div>
-        </div>
-      </section>
       <footer class="main-footer clearfix">
         <section class="footer-social">
           <ul class="social-btn">
@@ -192,17 +197,14 @@
         </section>
         <section class="footer-about-us">
           <ul class="footer information">
-            <!--<li class="footer information-item">
-              <img src="#" width="" height="" alt="heart">
-            </li>!-->
             <li class="footer information-item">
               <a href="#">Для поставщиков</a>
             </li>
             <li class="footer information-item">
-              <a href="#">О производстве</a>
+              <a href="#">Наши документы</a>
             </li>
             <li class="footer information-item">
-              <a href="#">Наши документы</a>
+              <a href="#">О производстве</a>
             </li>
             <li class="footer information-item">
               <a href="#">Экологические стандарты</a>
@@ -210,20 +212,23 @@
           </ul>
         </section>
         <section class="footer-copyright">
-          <a href="#"><img src="#" width="" height="" alt="Логотип академии"></a>
-          <p class="copyright">Сделано в<a href="#">HTML Academy</a>2017</p>
+          <a href="#"><img class="icon-html"src="img/icon-html.png" width="108px" height="38px" alt="Логотип академии"></a>
+          <p class="copyright">Сделано в<a class="underline" href="#">HTML Academy</a>2017</p>
         </section>
       </footer>
       <div class="form-content modal-content">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         <p class="modal-contact">Мы обязательно Вам ответим!</p>
         <form class="form modal-form" action="#" method="get">
-        <label class="label-form">Как вас зовут?<input type="text" name="name" placeholder="Как вас зовут?"></label>
-        <label class="label-form">Ваша почта для ответа?<input type="text" name="mail" placeholder="Ваша почта для ответа?"></label>
-        <label class="label-form">Напишите что-нибудь...<textarea name="comment" rows="6">Напишите что-нибудь...</textarea></label>
-        <input class="button button-modal" type="submit" value="Отправить">
-      </form>
+          <input type="text" id="name" name="name" placeholder="Как вас зовут?">
+          <label class="label-form" for="name">Как вас зовут?</label>
+          <input type="text" id="mail-3" name="mail" placeholder="Ваша почта для ответа?">
+          <label class="label-form" for="mail-3">Ваша почта для ответа?</label>
+          <textarea name="comment" rows="6">Напишите что-нибудь...</textarea>
+          <label class="label-form" for="comment">Напишите что-нибудь...</label>
+          <input class="button button-modal" type="submit" value="Отправить">
+        </form>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

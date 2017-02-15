@@ -125,6 +125,7 @@ h1{
   color: #ffffff;
   font-weight: bold;
   margin-left: 27px;
+  margin-top: 0px;
 }
 h2{
   font-size: 35px;
@@ -172,6 +173,7 @@ header{
 }
 .menu-item .visit{
   background-color: #d07058;
+  border-radius: 14px;
 }
 .menu-item {
   display: inline-block;
@@ -201,6 +203,9 @@ header{
   background-color: #ededed;
 }
 .submenu{
+  width: 143px;
+  border-radius: 3px;
+  background-color: #f7f6f3;
   position: absolute;
   top: 23px;
   left: -6px;
@@ -215,12 +220,19 @@ header{
   line-height: 16px;
 }
 .submenu-item a{
-  border-radius: 0px;
   padding-left: 20px;
-  padding-right: 20px;
   color: #323232;
-  background-color: #f7f6f3;
+  border-radius: 3px;
   text-decoration: none;
+}
+.submenu-title{
+  font-weight: bold;
+  color: #323232;
+  margin: 0px 6px;
+  padding-left: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #d1d0ce;
 }
 .submenu-item a:hover{
   background-color: #fbded7;
@@ -235,7 +247,7 @@ header{
 }*/
 .user-block{
   float: right;
-  width: 275px;
+  width: 300px;
 }
 .user{
   margin: 0;
@@ -244,11 +256,11 @@ header{
   font-size: 0;
 }
 .user-block-item{
-  display: inline-block;
-  vertical-align: top;
+  float: right;
   font-size: 14px;
   line-height: 16px;
   margin-top: 23px;
+  margin-bottom: 6px;
   margin-left: 11px;
 }
 .user-block-item a{
@@ -297,7 +309,7 @@ header{
   padding-right: 15px;
   padding-bottom: 20px;
   position: absolute;
-  left: 60%;
+  margin-left: -311px;
   display: none;
 }
 .search-form input[type="text"]{
@@ -341,6 +353,7 @@ header{
   padding-right: 19px;
   padding-bottom: 10px;
   position: absolute;
+  margin-left: -184px;
   display: none;
 }
 .login-form input[type="text"]{
@@ -356,8 +369,6 @@ header{
 }
 .entrance{
   float: right;
-  margin-top: 8px;
-  padding: 0px;
 }
 .login-content a{
   font-size: 13px;
@@ -370,7 +381,7 @@ header{
 }
 .basket{
   padding-left: 42px;
-  padding-right: 37px;
+  padding-right: 34px;
   position: relative;
 }
 .basket::before{
@@ -414,6 +425,7 @@ header{
   font-size: 13px;
   line-height: 16px;
   color: #323232;
+  border-radius: 10px;
   position: absolute;
   top: 70px;
   right: 100px;
@@ -510,7 +522,7 @@ main{
 }
 .actions{
   width: 1146px;
-  margin: 40px 27px;
+  margin: 38px 27px;
 }
 .action-item{
   font-size: 18px;
@@ -720,24 +732,97 @@ h3{
   color: #999999;
   padding-left: 15px;
 }
-.map{
+.map-block{
   min-width: 1200px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 .container{
   width: 1200px;
   margin: 0 auto;
   background-color: transparent;
-  border: 1px solid green;
 }
 .address{
-  width: 303px;
+  width: 253px;
   float: right;
   background-color: #fefefe;
+  margin-top: 62px;
+  margin-bottom: 62px;
+  margin-right: 27px;
+  margin-left:
+  margin-top: 62px;
+  margin-bottom: 62px;
+  padding: 30px 25px;
+  border-radius: 15px;
+}
+.label{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-right: 100px;
+  margin: 0px;
+  margin-bottom: 9px;
+}
+.value{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding-right: 20px;
+  margin: 0px;
+  margin-bottom: 24px;
+}
+.order-phone{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-right: 70px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.phone-2{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: 6px;
+}
+.phone-time{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0px;
+  margin-bottom: 26px;
+}
+.button-address{
+  padding: 10px 28px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
 }
 .breadcrumbs{
   margin-left: 27px;
+}
+.nav-breadcrumbs{
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  margin: 0;
+  margin-top: -32px;
+  margin-bottom: 16px;
+}
+.breadcrumbs-item {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+  padding-right: 8px;
+}
+.breadcrumbs-item a{
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+}
+.symbol{
+  color: #ffffff;
 }
 .filters{
   width: 1146px;
@@ -911,6 +996,7 @@ footer{
   width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
+  padding-bottom: 29px;
 }
 .footer-social{
   float: left;
@@ -938,7 +1024,7 @@ footer{
   text-decoration: none;
 }
 .social-btn-tw{
-  background-position: -64px -224px;;
+  background-position: -64px -224px;
 }
 .social-btn-inst{
   background-position: -116px -157px;
@@ -961,13 +1047,13 @@ footer{
   margin-top: 37px;
 }
 .information-item{
-  display: block;
+  display: inline-block;
   width: 144px;
-  float: left;
-  font-size:13px;
+  font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   vertical-align: top;
+  position: relative;
 }
 .information-item:first-child::before{
   content: "";
@@ -983,21 +1069,49 @@ footer{
   width:188px;
 }
 .information-item a{
+  display: inline-block;
   color: #ffffff;
   padding-left: 22px;
   text-decoration: none;
 }
-/*.information-item a::after{
+.information-item a::after{
   content: "";
   display: block;
+  position: absolute;
   height: 1px;
   background-color: #ffffff;
   opacity: 0.3;
   width: 100%;
-}*/
+}
 .footer-copyright{
   float: right;
-  width: 190px;
+  width: 205px;
+  padding-left: 70px;
+  position: relative;
+}
+.footer-copyright p,
+.footer-copyright a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size:13px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin: 0px;
+}
+.icon-html{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.underline::after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  width: 100%;
 }
 .form-content{
   color: #323232;
@@ -1059,7 +1173,9 @@ footer{
   background-color: #ffffff;
   border: 1px solid #999999;
   margin: 0;
+  margin-top: 20px;
   margin-bottom: 7px;
+  position: relative;
 }
 .form input:hover{
   border: 2px solid #999999;
@@ -1070,8 +1186,14 @@ footer{
 .form input:focus{
   border: 1px solid #8fbdec;
 }
+.form input:focus+.label-form{
+  display: block;
+}
 .form textarea:focus{
   border: 1px solid #8fbdec;
+}
+.form textarea:focus+.label-form{
+  display: block;
 }
 .modal-form input[type="text"]{
   width: 267px;
@@ -1092,5 +1214,7 @@ footer{
   line-height: 13px;
   color: #999999;
   padding-left: 15px;
-  /*display: none;*/
+  display: none;
+  position: absolute;
+  top: 70px;
 }
