@@ -10,7 +10,6 @@ body > input[type="radio"] {
   display: none;
 }
 .site-wrapper{
-  min-width: 1200px;
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5 ease;
@@ -169,7 +168,6 @@ header{
   color: #ffffff;
   display: block;
   text-decoration: none;
-  border-radius: 14px;
   padding: 7px 14px;
 }
 .menu-item .visit{
@@ -180,6 +178,7 @@ header{
   font-size: 16px;
   line-height: 18px;
   vertical-align: top;
+  border-radius: 14px;
   position: relative;
 }
 .menu-item a::after{
@@ -187,10 +186,10 @@ header{
   display: block;
   height: 1px;
   background-color: #ffffff;
-  opacity: 0.2;
+  opacity: 0.3;
   width: 100%;
 }
-.menu-item a:hover{
+.menu-item:hover{
   color: #333333;
   background-color: #f7f6f3;
 }
@@ -258,6 +257,8 @@ header{
   padding-bottom: 8px;
   font-weight: 500;
   color: #ffffff;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.3);
   text-decoration: none;
   border-radius: 16px;
 }
@@ -265,12 +266,13 @@ header{
   width: 32px;
   height: 16px;
   background-color: #ffffff;
-  opacity: 0.2;
   position: relative;
 }
 .search:hover{
   background-color: #ffffff;
-  opacity: 1;
+}
+.search:hover+.search-content{
+  display: block;
 }
 .search::before{
   content: "";
@@ -282,24 +284,39 @@ header{
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -391px -172px;
-  opacity: 1;
 }
 .search:hover::before{
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -354px -172px;
 }
+.search-content{
+  width: 311px;
+  padding-top: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  position: absolute;
+  left: 60%;
+  display: none;
+}
+.search-form input[type="text"]{
+  width: 279px;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
 .login{
   padding-left: 44px;
   padding-right: 16px;
   background-color: #ffffff;
-  opacity: 0.2;
   position: relative;
 }
 .login:hover{
   background-color: #ffffff;
-  opacity: 1;
   color: #323232;
+}
+.login:hover+.login-content{
+  display: block;
 }
 .login::before{
   content: "";
@@ -317,11 +334,43 @@ header{
   background-repeat: no-repeat;
   background-position: -271px -10px;
 }
+.login-content{
+  width: 239px;
+  padding-top: 7px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 10px;
+  position: absolute;
+  display: none;
+}
+.login-form input[type="text"]{
+  width: 211px;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+.login-form input[type="submit"]{
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 25px;
+}
+.entrance{
+  float: right;
+  margin-top: 8px;
+  padding: 0px;
+}
+.login-content a{
+  font-size: 13px;
+  line-height: 20px;
+  color: #323232;
+  text-decoration: underline;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+}
 .basket{
   padding-left: 42px;
   padding-right: 37px;
-  /*background-color: #ffffff;
-  opacity: 0.2;*/
   position: relative;
 }
 .basket::before{
@@ -354,7 +403,7 @@ header{
   font-weight: bold;
   text-align: right;
 }
-.tel{
+.phone{
   font-size: 22px;
   line-height:24px;
   font-weight: bold;
@@ -368,7 +417,6 @@ header{
   position: absolute;
   top: 70px;
   right: 100px;
-  z-index: 20;
   display: none;
 }
 table{
@@ -534,7 +582,7 @@ main{
 }
 .catalog-item:hover{
   background: rgb(255, 255, 255);
-  background: rgba (255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 .button-catalog{
   font-size: 18px;
@@ -869,13 +917,92 @@ footer{
   width: 350px;
   padding-right: 50px;
 }
+.footer-social ul{
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.social-btn-item {
+  display: inline-block;
+  vertical-align: top;
+}
+.social-btn-item a{
+  color: #ffffff;
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin-right: 11px;
+  margin-top: 36px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.social-btn-tw{
+  background-position: -64px -224px;;
+}
+.social-btn-inst{
+  background-position: -116px -157px;
+}
+.social-btn-fb{
+  background-position: -10px -88px;
+}
+.social-btn-vk{
+  background-position: -10px -224px;
+}
 .footer-about-us{
   float: left;
   width: 340px;
 }
+.footer-about-us ul{
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  margin: 0px;
+  margin-top: 37px;
+}
+.information-item{
+  display: block;
+  width: 144px;
+  float: left;
+  font-size:13px;
+  line-height: 18px;
+  font-weight: 400;
+  vertical-align: top;
+}
+.information-item:first-child::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -68px -88px;
+}
+.information-item:last-child{
+  width:188px;
+}
+.information-item a{
+  color: #ffffff;
+  padding-left: 22px;
+  text-decoration: none;
+}
+/*.information-item a::after{
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  width: 100%;
+}*/
 .footer-copyright{
   float: right;
   width: 190px;
+}
+.form-content{
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 10px;
 }
 .modal-content{
   position: absolute;
@@ -887,7 +1014,7 @@ footer{
   color: #323232;
   background-color: #f8f7f4;
   border-radius: 10px;
-  display: none;
+  /*display: none;*/
 }
 .modal-content-close{
   position: absolute;
@@ -923,28 +1050,47 @@ footer{
   margin: 0px;
   margin-bottom: 20px;
 }
-.modal-form input[type="text"],
-.modal-form textarea{
+.form input[type="text"],
+.form textarea{
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto", "Arial", sans-serif;
   color: #999999;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  margin: 0;
+  margin-bottom: 7px;
+}
+.form input:hover{
+  border: 2px solid #999999;
+}
+.form textarea:hover{
+  border: 2px solid #999999;
+}
+.form input:focus{
+  border: 1px solid #8fbdec;
+}
+.form textarea:focus{
+  border: 1px solid #8fbdec;
 }
 .modal-form input[type="text"]{
   width: 267px;
-  margin: 0;
-  margin-bottom: 20px;
   padding: 9px 14px;
   border-radius: 3px;
 }
 .modal-form textarea{
   width: 398px;
-  margin: 0;
-  margin-bottom: 20px;
   padding: 9px 14px;
   border-radius: 3px;
 }
 .button-modal{
   margin-left: 300px;
   margin-bottom: 10px;
+}
+.label-form{
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
+  padding-left: 15px;
+  /*display: none;*/
 }

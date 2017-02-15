@@ -43,20 +43,26 @@
       <div class="user-block">
         <ul class="user">
           <li class="user-block-item">
-            <a class="search" href="#">Поиск</a>
-            <form action="#" method="get">
-              <input type="text" name="search" placeholder="Что ищем?">
-            </form>
+            <a class="search" href="#"></a>
+            <div class="form-content search-content">
+              <form class="form search-form" action="#" method="get">
+                <label class="label-form">Что ищем?<input type="text" name="search" placeholder="Что ищем?"></label>
+              </form>
+            </div>
           </li>
           <li class="user-block-item">
             <a class="login" href="#">Вход</a>
-            <form action="#" method="post">
-              <input type="text" name="mail" placeholder="Электронная почта">
-              <input type="text" name="password" placeholder="Пароль">
-              <input type="submit" value="Войти">
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </form>
+            <div class="form-content login-content clearfix">
+              <form class="form login-form"action="#" method="post">
+                <label class="label-form">Электронная почта<input type="text" name="mail" placeholder="Электронная почта"></label>
+                <label class="label-form">Пароль<input type="text" name="password" placeholder="Пароль"></label>
+                <input type="submit" class="button" value="Войти">
+                <div class="entrance">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
           </li>
           <li class="user-block-item">
             <a class="basket not-empty" href="#">2 товара</a>
@@ -86,7 +92,7 @@
             </div>
           </li>
         </ul>
-        <p class="user-time">С 10 до 20, ежедневно 8 812 450-25-25</p>
+        <p class="user-time">С 10 до 20, ежедневно<br><span class="phone">8 812 450-25-25</span></p>
       </div>
     </header>
     <main>
