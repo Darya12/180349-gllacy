@@ -126,6 +126,7 @@ h1{
   font-weight: bold;
   margin-left: 27px;
   margin-top: 0px;
+  margin-bottom: 27px;
 }
 h2{
   font-size: 35px;
@@ -394,6 +395,9 @@ header{
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -51px -10px;
+}
+.not-empty{
+  padding-right: 15px;
 }
 .not-empty::before{
   content: "";
@@ -671,7 +675,7 @@ h3{
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  padding-top: 24px;
+  padding-top: 10px;
   padding-left: 20px;
 }
 .news{
@@ -807,7 +811,6 @@ h3{
   font-size: 0;
   margin: 0;
   margin-top: -32px;
-  margin-bottom: 16px;
 }
 .breadcrumbs-item {
   display: inline-block;
@@ -828,6 +831,30 @@ h3{
   width: 1146px;
   margin: 0 27px;
 }
+.filter{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  padding-left: 16px;
+  margin: 0px;
+  margin-bottom: 6px;
+}
+.filter-label{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  padding-right: 19px;
+  color: #ffffff;
+}
+.label-item{
+  padding-right: 16px;
+}
+.filter-content{
+  border-radius: 18px;
+  padding: 7px 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .sorting{
   float: left;
   width: 195px;
@@ -840,12 +867,12 @@ h3{
 }
 .fatness{
   float: left;
-  width: 418px;
+  width: 416px;
   padding-right: 280px;
 }
 .fillers{
   float: left;
-  width: 863px;
+  width: 702px;
   padding-right: 280px;
 }
 .nav-paginator{

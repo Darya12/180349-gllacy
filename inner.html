@@ -119,41 +119,45 @@
       <h1>Сливочное мороженое</h1>
       <form class="filters clearfix" action="#" method="get">
         <div class="sorting">
-          <p class="filters-sorting">Сортировка:</p>
+          <p class="filter filter-sorting">Сортировка:</p>
           <select name="sorting">
-            <option value="popularity">По популярности</option>
-            <option value="cheap">Сначала недорогие</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="fatness">По жирности</option>
+            <option class="filter-item" value="popularity">По популярности</option>
+            <option class="filter-item" value="cheap">Сначала недорогие</option>
+            <option class="filter-item" value="expensive">Сначала дорогие</option>
+            <option class="filter-item" value="fatness">По жирности</option>
           </select>
         </div>
         <div class="price">
-          <p class="filters-price">Цена: 100 руб. - 500 руб.</p>
+          <p class="filter filter-price">Цена: 100 руб. - 500 руб.</p>
           <input type="range">
         </div>
         <div class="fatness">
-          <p class="filters-fatness">Жирность</p>
-          <input type="radio" id="0%">
-          <label for="0%">0%</label>
-          <input type="radio" id="10%"checked>
-          <label for="10%">до 10%</label>
-          <input type="radio" id="30%">
-          <label for="30%">до 30%</label>
-          <input type="radio" id="+30%">
-          <label for="+30%">выше 30%</label>
+          <p class="filter filter-fatness">Жирность</p>
+          <div class="filter-content">
+            <input type="radio" id="0%">
+            <label for="0%"class="filter-label label-item">0%</label>
+            <input type="radio" id="10%"checked>
+            <label for="10%"class="filter-label label-item">до 10%</label>
+            <input type="radio" id="30%">
+            <label for="30%"class="filter-label label-item">до 30%</label>
+            <input type="radio" id="+30%">
+            <label for="+30%"class="filter-label">выше 30%</label>
+          </div>
         </div>
-        <div class="fillers">
-          <p class="fillers">Наполнители:</p>
-          <input type="checkbox" id="chocolate"checked>
-          <label for="chokolate">шоколадные</label>
-          <input type="checkbox" id="sugar"checked>
-          <label for="sugar">сахарные присыпки</label>
-          <input type="checkbox" id="fruit">
-          <label for="fruit">фрукты</label>
-          <input type="checkbox" id="syrup">
-          <label for="syrup">сиропы</label>
-          <input type="checkbox" id="jam">
-          <label for="jam">джемы</label>
+        <div class="fillers clearfix">
+          <p class="filter filter-fillers">Наполнители:</p>
+          <div class="filter-content">
+            <input type="checkbox" id="chocolate"checked>
+            <label for="chokolate" class="filter-label">шоколадные</label>
+            <input type="checkbox" id="sugar"checked>
+            <label for="sugar" class="filter-label">сахарные присыпки</label>
+            <input type="checkbox" id="fruit">
+            <label for="fruit" class="filter-label">фрукты</label>
+            <input type="checkbox" id="syrup">
+            <label for="syrup" class="filter-label">сиропы</label>
+            <input type="checkbox" id="jam">
+            <label for="jam" class="filter-label">джемы</label>
+          </div>
           <input type="submit" value="Применить">
         </div>
       </form>
