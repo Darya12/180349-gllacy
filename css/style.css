@@ -25,11 +25,6 @@ body > input[type="radio"] {
 .site-wrapper::before{
   background-image: url("../img/ice-cream-3.png");
 }
-.content-wrapper{
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 .slider{
   width: 1146px;
   margin: 0 auto;
@@ -59,6 +54,7 @@ body > input[type="radio"] {
   background: -moz-linear-gradient(top, #f26843 0%, #e74b36 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74b36 100%);
   background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
+  border: none;
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
@@ -589,12 +585,18 @@ main{
   margin-top: -65px;
   margin-bottom: 28px;
 }
+.small{
+  font-size: 30px;
+}
 .catalog-item-name{
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #ffffff;
   text-align: center;
+}
+.underline{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .catalog-item:hover{
   background: rgb(255, 255, 255);
@@ -621,7 +623,7 @@ main{
 .production-item{
   float: left;
   width: 478px;
-  padding-left: 75px;
+  padding-left: 73px;
   padding-right: 20px;
   padding-bottom: 8px;
   margin-top: 0px;
@@ -675,7 +677,7 @@ h3{
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  padding-top: 10px;
+  padding-top: 22px;
   padding-left: 20px;
 }
 .news{
@@ -705,36 +707,45 @@ h3{
   margin-right: 250px;
   margin-bottom: 76px;
 }
+.topic:hover{
+  color:#e84d37;
+}
 .delivery{
   float: right;
-  width: 560px;
-  background-color: #ffffff;
+  width: 550px;
+  padding: 5px;
+  background-image: url("../img/mail.jpg");
+  border-radius: 15px;
+}
+.white{
+  background-color: #f8f7f4;
+  padding-top: 15px;
+  padding-left: 21px;
+  padding-right: 17px;
+  padding-bottom: 93px;
   border-radius: 15px;
 }
 .mail{
   display: block;
   color: #5a5a5a;
-  margin-top: 35px;
-  padding-left: 27px;
-  padding-right: 12px;
+  line-height: 23px;
 }
 .button-mail{
+  float: right;
   color: #fefefe;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  padding: 10px 17px;
-  margin-left: 7px;
-  margin-bottom: 40px;
+  margin-top: 18px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
 }
-.mail input[type="text"]{
+.mail-form input[type="text"]{
+  float: left;
   width: 353px;
   height: 40px;
-  font-size: 16px;
-  line-height:24px;
-  font-family: "Roboto", "Arial", sans-serif;
-  color: #999999;
   padding-left: 15px;
+  border-radius: 3px;
 }
 .map-block{
   min-width: 1200px;
@@ -1073,6 +1084,10 @@ footer{
   margin: 0px;
   margin-top: 37px;
 }
+.footer-about-us a:hover,
+.footer-copyright a:hover{
+  color: #ffbc9e;
+}
 .information-item{
   display: inline-block;
   width: 144px;
@@ -1101,26 +1116,15 @@ footer{
   padding-left: 22px;
   text-decoration: none;
 }
-.information-item a::after{
-  content: "";
-  display: block;
-  position: absolute;
-  height: 1px;
-  background-color: #ffffff;
-  opacity: 0.3;
-  width: 100%;
-}
 .footer-copyright{
   float: right;
-  width: 205px;
-  padding-left: 70px;
-  position: relative;
+  width: 200px;
 }
 .footer-copyright p,
 .footer-copyright a{
   color: #ffffff;
   text-decoration: none;
-  font-size:13px;
+  font-size:12px;
   line-height: 18px;
   font-weight: 400;
   padding-right: 4px;
@@ -1130,15 +1134,6 @@ footer{
 .icon-html{
   margin-top: 20px;
   margin-bottom: 0px;
-}
-.underline::after{
-  content: "";
-  display: block;
-  position: absolute;
-  height: 1px;
-  background-color: #ffffff;
-  opacity: 0.3;
-  width: 100%;
 }
 .form-content{
   color: #323232;
@@ -1202,23 +1197,16 @@ footer{
   margin: 0;
   margin-top: 20px;
   margin-bottom: 7px;
-  position: relative;
 }
-.form input:hover{
-  border: 2px solid #999999;
-}
+.form input:hover,
 .form textarea:hover{
   border: 2px solid #999999;
 }
-.form input:focus{
-  border: 1px solid #8fbdec;
-}
-.form input:focus+.label-form{
-  display: block;
-}
+.form input:focus,
 .form textarea:focus{
   border: 1px solid #8fbdec;
 }
+.form input:focus+.label-form,
 .form textarea:focus+.label-form{
   display: block;
 }
@@ -1236,6 +1224,9 @@ footer{
   margin-left: 300px;
   margin-bottom: 10px;
 }
+.form-group{
+  position: relative;
+}
 .label-form{
   font-size: 11px;
   line-height: 13px;
@@ -1243,5 +1234,5 @@ footer{
   padding-left: 15px;
   display: none;
   position: absolute;
-  top: 70px;
+  top: 0;
 }
