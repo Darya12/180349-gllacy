@@ -175,7 +175,6 @@
         </section>
       </main>
       <section class="map-block">
-        <img src="img/map.jpg" width="100%" height="100%" alt="map">
         <div class="container clearfix">
           <div class="address">
             <p class="label">Адрес главного офиса и офлайн магазина:</p>
@@ -186,6 +185,7 @@
             <a class="button button-address" href="#">Форма обратной связи</a>
           </div>
         </div>
+        <div id="yandex-map"></div>
       </section>
       <footer class="main-footer clearfix">
         <section class="footer-social">
@@ -231,19 +231,23 @@
       <p class="modal-contact">Мы обязательно Вам ответим!</p>
       <form class="form modal-form" action="#" method="get">
         <div class="form-group">
-          <input type="text" id="name" name="name" placeholder="Как вас зовут?">
+          <input type="text" id="name" name="name" placeholder="Как вас зовут?"required>
           <label class="label-form" for="name">Как вас зовут?</label>
         </div>
         <div class="form-group">
-          <input type="text" id="mail-3" name="email" placeholder="Ваша почта для ответа?">
+          <input type="text" id="mail-3" name="email" placeholder="Ваша почта для ответа?"required>
           <label class="label-form" for="mail-3">Ваша почта для ответа?</label>
         </div>
         <div class="form-group">
-          <textarea name="comment" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea name="comment" rows="6" placeholder="Напишите что-нибудь..."required></textarea>
           <label class="label-form" for="comment">Напишите что-нибудь...</label>
         </div>
         <button class="button button-modal" type="submit" value="Отправить">Отправить</button>
       </form>
     </div>
+    <div class="modal-overlay"></div>
+    <script src="js/popup.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=MndqPa8BDbB38QVmbERDPUqPgoPm-y3f&amp;width=100%25&amp;height=430&amp;id=yandex-map">
+    </script>
   </body>
 </html>
