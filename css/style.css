@@ -469,7 +469,7 @@ td{
   background-image: url("../img/sprite.png");
   background-position: -10px -157px;
 }
-.photo-2:before{
+.photo-2::before{
   content: "";
   display: block;
   position: absolute;
@@ -855,14 +855,63 @@ h3{
   line-height: 18px;
   font-weight: 500;
   padding-right: 19px;
+  padding-left: 33px;
   color: #ffffff;
+  cursor: pointer;
+  position: relative;
 }
-.label-item{
+.label-checkbox input[type="checkbox"],
+.label-radio input[type="radio"]{
+  display: none;
+}
+.label-checkbox input[type="checkbox"]+.checkbox-indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -92px -10px;
+}
+.label-checkbox input[type="checkbox"]:checked+.checkbox-indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -132px -10px;
+}
+
+.label-radio{
   padding-right: 16px;
+}
+.label-radio input[type="radio"]+.radio-indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -272px -172px;
+}
+.label-radio input[type="radio"]:checked+.radio-indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -313px -172px;
 }
 .filter-content{
   border-radius: 18px;
   padding: 7px 16px;
+  padding-right: 0px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 .sorting{
@@ -882,8 +931,8 @@ h3{
 }
 .fillers{
   float: left;
-  width: 702px;
-  padding-right: 280px;
+  /*width: 702px;
+  padding-right: 280px;*/
 }
 .nav-paginator{
   float: right;
