@@ -29,7 +29,7 @@ body > input[type="radio"] {
   width: 1146px;
   margin: 0 auto;
   position: relative;
-  padding-top: 266px;
+  padding-top: 262px;
   text-align: center;
   color: #ffffff;
 }
@@ -200,7 +200,7 @@ header{
 .menu-item a:active::after{
   opacity: 0;
 }
-.menu-item a:hover+.submenu{
+.menu-item a:hover +.submenu{
   display: block;
 }
 .menu-item a:active{
@@ -513,7 +513,7 @@ main{
 }
 .actions{
   width: 1146px;
-  margin: 38px 27px;
+  margin: 40px 27px;
 }
 .action-item{
   font-size: 18px;
@@ -550,6 +550,8 @@ main{
 .catalog{
   width: 1172;
   margin: 0 14px;
+}
+.catalog-inner{
   margin-bottom: 48px;
 }
 .catalog-item{
@@ -558,8 +560,10 @@ main{
   padding-top: 6px;
   padding-left: 13px;
   padding-right: 13px;
-  padding-bottom: 18px;
   position: relative;
+}
+.catalog-inner .catalog-item{
+  padding-bottom: 18px;
 }
 .catalog-item-photo{
   width: 267px;
@@ -592,9 +596,12 @@ main{
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .catalog-item:hover{
+  height: 380px;
+  z-index: 20;
+  margin-bottom: -50px;
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .button-catalog{
   font-size: 18px;
@@ -749,8 +756,14 @@ h3{
 .map-block{
   min-width: 1200px;
   margin: 0 auto;
+  margin-top: 44px;
+}
+.yandex-map{
+  margin-bottom: -430px;
 }
 .container{
+  position: relative;
+  z-index: 30;
   width: 1200px;
   margin: 0 auto;
 }
@@ -760,10 +773,7 @@ h3{
   background-color: #fefefe;
   margin-top: 62px;
   margin-bottom: 62px;
-  margin-right: 27px;
-  margin-left:
-  margin-top: 62px;
-  margin-bottom: 62px;
+  margin-right: 25px;
   padding: 30px 25px;
   border-radius: 15px;
 }
@@ -772,8 +782,7 @@ h3{
   line-height: 20px;
   font-weight: 400;
   padding-right: 100px;
-  margin: 0px;
-  margin-bottom: 9px;
+  margin: 0;
 }
 .value{
   font-size: 18px;
@@ -781,7 +790,7 @@ h3{
   font-weight: bold;
   padding-right: 20px;
   margin: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 .order-phone{
   font-size: 14px;
@@ -789,21 +798,21 @@ h3{
   font-weight: 400;
   padding-right: 70px;
   margin: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .phone-2{
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
   margin: 0px;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 .phone-time{
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
   margin: 0px;
-  margin-bottom: 26px;
+  margin-bottom: 21px;
 }
 .button-address{
   padding: 10px 28px;
