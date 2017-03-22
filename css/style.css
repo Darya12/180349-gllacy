@@ -289,7 +289,7 @@ header{
 .search:hover{
   background-color: #ffffff;
 }
-.search:hover+.search-content{
+.block-search:hover .search-content{
   display: block;
 }
 .search::before{
@@ -315,6 +315,7 @@ header{
   padding-right: 15px;
   padding-bottom: 20px;
   position: absolute;
+  top: 70px;
   margin-left: -311px;
   display: none;
 }
@@ -333,7 +334,7 @@ header{
   background-color: #ffffff;
   color: #323232;
 }
-.login:hover+.login-content{
+.block-login:hover .login-content{
   display: block;
 }
 .login::before{
@@ -361,6 +362,7 @@ header{
   position: absolute;
   z-index: 20;
   margin-left: -184px;
+  top: 70px;
   display: none;
 }
 .login-form input[type="text"]{
@@ -503,7 +505,7 @@ td{
   font-weight: bold;
   padding: 10px 15px;
 }
-.basket:hover+.purchase{
+.block-basket:hover .purchase{
   display: block;
 }
 main{
@@ -596,12 +598,15 @@ main{
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .catalog-item:hover{
-  height: 380px;
   z-index: 20;
   margin-bottom: -50px;
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
+}
+.catalog .catalog-item:hover{
+  padding-bottom: 18px;
+  margin-bottom: -58px;
 }
 .button-catalog{
   font-size: 18px;
@@ -1461,7 +1466,7 @@ footer{
   }
 }
 .modal-content{
-  position: absolute;
+  position: fixed;
   z-index: 20;
   top: 338px;
   left: 50%;
